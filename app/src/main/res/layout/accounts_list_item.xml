@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivMe"
+            android:layout_width="132dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TrellMaina"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMe"
+            app:layout_constraintStart_toEndOf="@+id/ivMe"
+            app:layout_constraintTop_toTopOf="@+id/ivMe"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvhandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="#trellmaina"
+            app:layout_constraintBottom_toBottomOf="@+id/tvName"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="243dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="Coding and a mixtureof research is amazing.Keep diong great!"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivMe"
+            app:layout_constraintTop_toBottomOf="@+id/tvhandle" />
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMe"
+            app:srcCompat="@drawable/comment" />
+
+        <ImageView
+            android:id="@+id/ivretweet"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvcomment"
+            app:layout_constraintStart_toEndOf="@+id/tvcomment"
+            app:layout_constraintTop_toTopOf="@+id/tvcomment"
+            app:srcCompat="@drawable/retweet" />
+
+        <ImageView
+            android:id="@+id/ivlikes"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvretweet"
+            app:layout_constraintStart_toEndOf="@+id/tvretweet"
+            app:layout_constraintTop_toTopOf="@+id/tvretweet"
+            app:srcCompat="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/ivShares"
+            android:layout_width="47dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvlike"
+            app:layout_constraintStart_toEndOf="@+id/tvlike"
+            app:layout_constraintTop_toTopOf="@+id/tvlike"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/share" />
+
+        <TextView
+            android:id="@+id/tvcomment"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:text="4"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivComment"
+            app:layout_constraintStart_toEndOf="@+id/ivComment"
+            app:layout_constraintTop_toTopOf="@+id/ivComment"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvretweet"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:text="7"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivretweet"
+            app:layout_constraintStart_toEndOf="@+id/ivretweet"
+            app:layout_constraintTop_toTopOf="@+id/ivretweet"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvlike"
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:text="20"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivlikes"
+            app:layout_constraintStart_toEndOf="@+id/ivlikes"
+            app:layout_constraintTop_toTopOf="@+id/ivlikes" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:text="5"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivShares"
+            app:layout_constraintStart_toEndOf="@+id/ivShares"
+            app:layout_constraintTop_toTopOf="@+id/ivShares" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
